@@ -9,7 +9,8 @@
     --clr-2:#484848;
     --clr-3:#efefef;
     --clr-4: #c416fe17;
-    --clr-5: #c41rgba(196, 22, 254, 0.192);
+    --clr-5: #rgba(196, 22, 254, 0.192);
+    --clr-6: #1e1e1e;
     --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -53,4 +54,34 @@ article:hover {
 
 .text_section {
     margin-left: 20px;
+}
+
+footer {
+    margin-top: 25px;
+    padding: 3px;
+    background-color: var(--clr-6);
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 715px) {
+    article {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article {
+        width: 300px;
+        height: 370px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
 }
