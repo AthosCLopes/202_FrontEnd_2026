@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nome": "Notebook Eco Pro 15\"",
+    "preco": 2899.90,
+    "categoria": "Notebooks",
+    "imagem": "https://picsum.photos/id/201/300/180",
+    "estoque": 15,
+    "descricao": "Notebook sustentável com materiais reciclados."
+  },
+  {
+    "id": 2,
+    "nome": "Mouse Sem Fio Ergonômico",
+    "preco": 89.90,
+    "categoria": "Acessórios",
+    "imagem": "https://picsum.photos/id/160/300/180",
+    "estoque": 50,
+    "descricao": "Mouse confortável com bateria de longa duração."
+  },
+  {
+    "id": 3,
+    "nome": "Teclado Mecânico RGB",
+    "preco": 249.90,
+    "categoria": "Acessórios",
+    "imagem": "https://picsum.photos/id/180/300/180",
+    "estoque": 30,
+    "descricao": "Teclado com iluminação RGB personalizável."
+  },
+  {
+    "id": 4,
+    "nome": "Kit Solar Power Bank",
+    "preco": 129.90,
+    "categoria": "Sustentáveis",
+    "imagem": "https://picsum.photos/id/251/300/180",
+    "estoque": 25,
+    "descricao": "Power bank carregado por energia solar - ODS 12."
+  }
+]
