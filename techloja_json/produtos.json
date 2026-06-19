@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "nome": "Notebook Eco Pro 15\"",
-    "preco": 2899.90,
-    "categoria": "Notebooks",
-    "imagem": "https://picsum.photos/id/201/300/180",
-    "estoque": 15,
-    "descricao": "Notebook sustentável com materiais reciclados."
+    "nome": "Bali, Indonésia",
+    "preco": 4299.9,
+    "categoria": "Ásia",
+    "imagem": "https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "estoque": 10,
+    "descricao": "7 noites com café da manhã, voos e traslados inclusos."
   },
   {
     "id": 2,
-    "nome": "Mouse Sem Fio Ergonômico",
-    "preco": 89.90,
-    "categoria": "Acessórios",
-    "imagem": "https://picsum.photos/id/160/300/180",
-    "estoque": 50,
-    "descricao": "Mouse confortável com bateria de longa duração."
+    "nome": "Lisboa, Portugal",
+    "preco": 3199.9,
+    "categoria": "Europa",
+    "imagem": "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ",
+    "estoque": 15,
+    "descricao": "8 noites em hotel 4 estrelas no centro histórico, voos inclusos."
   },
   {
     "id": 3,
-    "nome": "Teclado Mecânico RGB",
-    "preco": 249.90,
-    "categoria": "Acessórios",
-    "imagem": "https://picsum.photos/id/180/300/180",
-    "estoque": 30,
-    "descricao": "Teclado com iluminação RGB personalizável."
+    "nome": "Cancún, México",
+    "preco": 3799.9,
+    "categoria": "América",
+    "imagem": "https://images.unsplash.com/photo-1616423841125-8307665a0469?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "estoque": 12,
+    "descricao": "6 noites em resort all-inclusive com voos inclusos."
   },
   {
     "id": 4,
-    "nome": "Kit Solar Power Bank",
-    "preco": 129.90,
-    "categoria": "Sustentáveis",
-    "imagem": "https://picsum.photos/id/251/300/180",
-    "estoque": 25,
-    "descricao": "Power bank carregado por energia solar - ODS 12."
+    "nome": "Tóquio, Japão",
+    "preco": 6499.9,
+    "categoria": "Ásia",
+    "imagem": "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "estoque": 8,
+    "descricao": "10 noites com café da manhã, voos e passeio ao Monte Fuji."
   }
 ]

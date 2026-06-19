@@ -10,9 +10,9 @@ async function carregarProdutos() {
     } catch (error) {
         console.warn('Usando dados locais (fallback)');
         produtos = [
-            { id: 1, nome: "Notebook Eco Pro", preco: 2899.90, categoria: "Notebooks", imagem: "https://picsum.photos/id/201/300/180" },
-            { id: 2, nome: "Mouse Sem Fio", preco: 89.90, categoria: "Acessórios", imagem: "https://picsum.photos/id/160/300/180" },
-            { id: 3, nome: "Teclado Mecânico RGB", preco: 249.90, categoria: "Acessórios", imagem: "https://picsum.photos/id/180/300/180" }
+            { id: 1, nome: "Bali, Indonésia", preco: 4299.90, categoria: "Ásia", imagem: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=300&h=180&fit=crop" },
+            { id: 2, nome: "Lisboa, Portugal", preco: 3199.90, categoria: "Europa", imagem: "https://images.unsplash.com/photo-1585208798174-6cedd4454e5e?w=300&h=180&fit=crop" },
+            { id: 3, nome: "Cancún, México", preco: 3799.90, categoria: "América", imagem: "https://images.unsplash.com/photo-1552074284-5e88ef1aef18?w=300&h=180&fit=crop" }
         ];
     }
 
@@ -26,27 +26,27 @@ function renderizarProdutos(lista) {
 
     lista.forEach(produto => {
         const card = document.createElement('div');
-        card.className = 'card bg-white border border-slate-200 rounded-3xl overflow-hidden';
+        card.className = 'card bg-white border border-[#c8dfe6] rounded-3xl overflow-hidden';
         card.innerHTML = `
             <img src="${produto.imagem}" alt="${produto.nome}" class="w-full h-48 object-cover">
 
             <div class="p-5">
                 <div class="flex justify-between items-start mb-2">
                     <div>
-                        <h3 class="font-semibold">${produto.nome}</h3>
-                        <span class="text-xs px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full">
+                        <h3 class="font-semibold text-[#1a3a45]">${produto.nome}</h3>
+                        <span class="text-xs px-3 py-1 bg-[#f0f7f9] border border-[#0096a0]/30 text-[#0096a0] rounded-full">
                             ${produto.categoria}
                         </span>
                     </div>
 
                     <div class="text-right">
-                        <div class="font-bold text-xl">R$ ${produto.preco}</div>
+                        <div class="font-bold text-xl text-[#1a3a45]">R$ ${produto.preco}</div>
                     </div>
                 </div>
 
                 <button
                     onclick="adicionarAoCarrinho(${produto.id})"
-                    class="mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-2xl font-medium flex items-center justify-center gap-2">
+                    class="mt-3 w-full bg-[#0096a0] hover:bg-[#007a82] text-white py-3 rounded-2xl font-medium flex items-center justify-center gap-2">
                     <i class="fa-solid fa-cart-plus"></i>
                     <span>Adicionar</span>
                 </button>
@@ -81,7 +81,7 @@ function adicionarAoCarrinho(id) {
 
         atualizarContador();
 
-        alert(`${produto.nome} adicionado ao carrinho!`);
+        alert(`${produto.nome} adicionado à reserva!`);
     }
 }
 
@@ -101,27 +101,27 @@ function mostrarCarrinho() {
 
     if (carrinho.length === 0) {
         itensContainer.innerHTML =
-            '<p class="text-center py-8 text-slate-500">Seu carrinho está vazio.</p>';
+            '<p class="text-center py-8 text-[#1a3a45]/50">Sua reserva está vazia.</p>';
     } else {
         carrinho.forEach((item, index) => {
             total += item.preco;
 
             const itemHTML = `
-                <div class="flex gap-4 border-b pb-4">
+                <div class="flex gap-4 border-b border-[#c8dfe6] pb-4">
                     <img
                         src="${item.imagem}"
                         class="w-16 h-16 object-cover rounded-xl">
 
                     <div class="flex-1">
-                        <div class="font-semibold">${item.nome}</div>
-                        <div class="text-emerald-600">
+                        <div class="font-semibold text-[#1a3a45]">${item.nome}</div>
+                        <div class="text-[#0096a0]">
                             R$ ${item.preco}
                         </div>
                     </div>
 
                     <button
                         onclick="removerDoCarrinho(${index})"
-                        class="text-red-500 hover:text-red-700">
+                        class="text-[#1a3a45]/50 hover:text-[#0096a0]">
                         ×
                     </button>
                 </div>
@@ -170,7 +170,7 @@ function finalizarCompra() {
     });
     localStorage.setItem('pedidos', JSON.stringify(pedidos));
 
-    alert(`Compra finalizada com sucesso! Total: R$ ${total.toFixed(2)}\nPedido salvo localmente.`);
+    alert(`Reserva finalizada com sucesso! Total: R$ ${total.toFixed(2)}\nReserva salva localmente.`);
 
     carrinho = [];
     localStorage.setItem('carrinho', JSON.stringify(carrinho));

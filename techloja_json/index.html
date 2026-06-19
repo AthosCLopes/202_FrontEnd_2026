@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechLoja 2.0 (JSON)</title>
+    <title>Rotas — Agência de Viagens</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50">
+<body class="bg-[#f0f7f9] text-[#1a3a45]">
 
     <header class="bg-white shadow-sm">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-blue-600">
-                TechLoja <span class="text-emerald-500">2.0</span>
-                <span class="text-xs align-super text-slate-400">(JSON)</span>
-            </h1>
+            <div>
+                <h1 class="text-3xl font-bold text-[#0096a0]">
+                    ROTAS
+                </h1>
+                <p class="text-xs uppercase tracking-widest text-[#1a3a45]/60 mt-1">
+                    Agência de Viagens
+                </p>
+            </div>
 
-            <button onclick="mostrarCarrinho()" class="flex items-center gap-2 text-xl hover:text-blue-600">
+            <button onclick="mostrarCarrinho()" class="flex items-center gap-2 text-xl hover:text-[#0096a0]">
                 <i class="fas fa-solid fa-shopping-cart"></i>
-                <span id="contador-carrinho" class="bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                <span id="contador-carrinho" class="bg-[#0096a0] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
             </button>
         </div>
     </header>
@@ -29,12 +33,12 @@
         <input
             id="busca"
             type="text"
-            placeholder="Buscar produtos..."
-            class="w-full p-4 border rounded-3xl mb-8 focus:outline-none focus:border-blue-500"
+            placeholder="Buscar destinos..."
+            class="w-full p-4 border border-[#c8dfe6] bg-white text-[#1a3a45] placeholder-[#1a3a45]/40 rounded-3xl mb-8 focus:outline-none focus:border-[#0096a0]"
             onkeyup="filtrarProdutos()">
 
         <div id="product-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Produtos carregados via JS -->
+            <!-- Destinos carregados via JS -->
         </div>
     </main>
 
@@ -48,13 +52,13 @@
             class="bg-white rounded-3xl max-w-md w-full mx-4 max-h-[80vh] overflow-auto">
             <div class="p-6">
                 <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-semibold">Seu Carrinho</h2>
-                    <button onclick="fecharCarrinho()" class="text-3xl leading-none">X</button>
+                    <h2 class="text-2xl font-semibold">Sua Reserva</h2>
+                    <button onclick="fecharCarrinho()" class="text-3xl leading-none hover:text-[#0096a0]">X</button>
                 </div>
 
                 <div id="carrinho-itens" class="space-y-4"></div>
 
-                <div class="mt-6 pt-4 border-t">
+                <div class="mt-6 pt-4 border-t border-[#c8dfe6]">
                     <div class="flex justify-between font-bold text-xl">
                         <span>Total</span>
                         <span id="carrinho-total">R$ 0,00</span>
@@ -62,8 +66,8 @@
 
                     <button
                         onclick="finalizarCompra()"
-                        class="mt-4 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-3xl font-semibold">
-                        Finalizar Compra
+                        class="mt-4 w-full bg-[#0096a0] hover:bg-[#007a82] text-[#1a3a45] py-4 rounded-3xl font-semibold">
+                        Finalizar Reserva
                     </button>
                 </div>
             </div>
